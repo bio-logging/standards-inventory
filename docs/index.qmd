@@ -9,33 +9,33 @@ editor: source
 
 ```{=html}
 <style>
-
 body {
   font-size: calc(1rem + 2px) !important;
 }
-
 .page-columns {
   grid-template-columns: 0 1fr 0 !important;
   max-width: 100% !important;
   padding: 0 !important;
   margin: 0 auto !important;
 }
-
 .page-layout-article, #quarto-content {
   max-width: 100% !important;
   padding: 0 !important;
   margin: 0 auto !important;
 }
-
 .content {
   max-width: 100% !important;
   padding: 0 1.5rem !important;
   margin: 0 auto !important;
 }
-
 .dataTables_wrapper {
   width: 100% !important;
   margin: 0 auto !important;
+}
+/* targets the quarto grid directly */
+#quarto-document-content {
+  margin: 0 auto !important;
+  max-width: 100% !important;
 }
 </style>
 ```
