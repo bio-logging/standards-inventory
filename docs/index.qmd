@@ -9,6 +9,11 @@ editor: source
 
 ```{=html}
 <style>
+
+body {
+  font-size: calc(1rem + 2px) !important;
+}
+
 .page-columns {
   grid-template-columns: 0 1fr 0 !important;
   max-width: 100% !important;
