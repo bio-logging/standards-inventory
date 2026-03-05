@@ -3,8 +3,37 @@ title: "Bio-Logging Data Standards Initiatives"
 format: 
   html:
     page-layout: full
+    include-before-body: header.html
 editor: source
 ---
+
+```{=html}
+<style>
+.page-columns {
+  grid-template-columns: 0 1fr 0 !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
+
+.page-layout-article, #quarto-content {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
+
+.content {
+  max-width: 100% !important;
+  padding: 0 1.5rem !important;
+  margin: 0 auto !important;
+}
+
+.dataTables_wrapper {
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+</style>
+```
 
 ```{r}
 #| label: setup
@@ -72,7 +101,9 @@ table_data <- table_data |>
 DT::datatable(table_data,
               escape = FALSE,
               options = list(
-                pageLength = 20),
+                pageLength = 20, 
+                scrollX = TRUE,
+                autoWidth = TRUE),
               caption = htmltools::tags$caption(
                 style = 'caption-side: top; text-align: left;',
                 'IN PROGRESS: An inventory of community initiatives working towards data standardization and interoperability in bio-logging science and practice. Managed by the Data Standardization Working Group of the International Bio-Logging Society (https://bio-logging.net/wg/data-standardisation).'),
