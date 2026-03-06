@@ -1,5 +1,5 @@
 ---
-title: "Bio-Logging Data Standards Initiatives"
+title: "Bio-Logging Data Standards Initiatives Inventory"
 format: 
   html:
     page-layout: full
@@ -106,12 +106,12 @@ table_data <- table_data |>
 DT::datatable(table_data,
               escape = FALSE,
               options = list(
-                pageLength = 20, 
+                pageLength = 50, 
                 scrollX = TRUE,
                 autoWidth = TRUE),
               caption = htmltools::tags$caption(
                 style = 'caption-side: top; text-align: left;',
-                'IN PROGRESS: An inventory of community initiatives working towards data standardization and interoperability in bio-logging science and practice. Managed by the Data Standardization Working Group of the International Bio-Logging Society (https://bio-logging.net/wg/data-standardisation).'),
+                'This inventory compiles information about community initiatives are working towards data standardization and interoperability in bio-logging science and practice. It is managed by the Data Standardization Working Group of the International Bio-Logging Society (https://bio-logging.net/wg/data-standardisation).'),
               rownames = FALSE)
 ```
 
